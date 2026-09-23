@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Help — PrayIt</title>
-<meta name="description" content="How to use PrayIt — the daily prayer flow, people and events, rotation, schedule balancing, devotionals, and backup.">
+<meta name="description" content="How to use PrayIt — the daily prayer flow, people and events, rotation, schedule balancing, Thanksgiving reminders, archiving, devotionals, and backup.">
 <link rel="stylesheet" href="style.css">
 <style>
 .help-hero {
@@ -246,9 +246,11 @@
         <div class="section-group">How it works</div>
         <a href="#rotation">🔁 Rotation</a>
         <a href="#balancing">📅 Schedule balancing</a>
+        <a href="#thanksgiving">🎉 Thanksgiving Reminders</a>
         <a href="#devotionals">📖 Devotionals</a>
         <div class="section-group">Your data</div>
         <a href="#backup">💾 Backup &amp; Restore</a>
+        <a href="#archiving">🗄️ Archiving</a>
         <a href="#faq">❓ FAQ</a>
       </nav>
     </aside>
@@ -283,6 +285,9 @@
         <h3>Show More</h3>
         <p>If a category has more unscheduled requests than fit on today's page, a <strong>Show More</strong> button reveals another batch of the same size. It's a peek ahead — marking something Prayed resets it.</p>
 
+        <h3>Adding and editing right from here</h3>
+        <p>Tap the <strong>+</strong> next to anyone's name to add a new request for them without leaving the flow. Tap a request's text (not the green circle) to open it for editing — most often to change its schedule on the spot, e.g. Daily → Weekly, or turn scheduling off entirely so it joins rotation instead.</p>
+
         <h3>Start Over</h3>
         <p>After the last category you'll see an <em>All Done</em> screen with a <strong>Start Over</strong> button. It just lets you walk the categories again from the top — it does not un-pray anything or rewind your place in the rotation.</p>
       </section>
@@ -304,7 +309,7 @@
         <p>Tap <strong>+</strong>, enter a name, and pick a category (the default category is pre-selected). Turn on <em>"This is an event, not a person"</em> for things like <em>Elders &amp; Church</em> or <em>Women's ministry</em>. You can type their first prayer request right on the same screen, or leave it blank and add requests later.</p>
 
         <h3>A person's detail screen</h3>
-        <p>Shows their category, any notes, their <strong>Active Requests</strong>, and an <strong>Answered</strong> section once something's been closed out. From the <strong>⋯</strong> menu you can add a request or edit the person. Swipe a request to delete it, or tap the seal icon to mark it answered.</p>
+        <p>Shows their category, any notes, their <strong>Active Requests</strong>, and an <strong>Answered</strong> section once something's been closed out. From the <strong>⋯</strong> menu you can add a request or edit the person. Swipe an active request to delete it, or tap the seal icon to mark it answered. In the Answered section, swipe left to delete for good, or right to archive it (see <a href="#archiving">Archiving</a>).</p>
 
         <h3>Search</h3>
         <p>The search bar matches both names and the text of requests — so searching "salvation" finds every person with a request about it.</p>
@@ -319,8 +324,12 @@
           <li><strong>Active</strong> — everything still being prayed for</li>
           <li><strong>Answered</strong> — everything closed out, with its answer note</li>
           <li><strong>All</strong> — both together</li>
+          <li><strong>Archived</strong> — answered prayers you've tucked away (see <a href="#archiving">Archiving</a> below)</li>
         </ul>
         <p>Requests stay grouped under their category and person, so it reads like a printed prayer list.</p>
+
+        <h3>Managing an answered request</h3>
+        <p>Swipe an answered row <strong>left</strong> to delete it for good, or <strong>right</strong> to archive it — archiving moves it out of Answered/All and into the Archived filter, without deleting it. From Archived, swipe right again to <strong>Restore</strong> it.</p>
 
         <h3>Sharing / exporting a list</h3>
         <p>Tap the share button in the top corner to export the current view as plain text — ready to paste into an email, a message, or a notes app, or to hand to someone else who prays with you.</p>
@@ -343,6 +352,9 @@
 
         <h3>Prayer Schedule</h3>
         <p><strong>Balance scheduled prayers</strong> spreads your fixed-schedule requests evenly across the calendar. It's on by default. <strong>Balance Now</strong> re-runs it on demand. See <a href="#balancing">Schedule balancing</a> below.</p>
+
+        <h3>Thanksgiving Reminders</h3>
+        <p>Pick the person or event where you want answered-prayer reminders to go. See <a href="#thanksgiving">Thanksgiving Reminders</a> below.</p>
 
         <h3>Backup &amp; Restore</h3>
         <p>Export a JSON backup, or import one. Import always merges — see <a href="#backup">Backup &amp; Restore</a>.</p>
@@ -367,6 +379,9 @@
 
         <h3>Set the page size per category</h3>
         <p>In Admin, each category has a <em>"Reveal at least N at a time"</em> setting. A category with a lot of people might reveal 5; a short one might reveal 2. <strong>Show More</strong> in the Pray flow reveals another batch when you want to go further.</p>
+
+        <h3>It never runs dry</h3>
+        <p>Some people pray through a category more than once a day — that's fine. Once you've been through everyone today, PrayIt shows <em>"You've prayed through everyone today — here they are again."</em> and lets you keep going. Praying one of those again drops just that one and brings the next one into its place, exactly the same one-at-a-time feel as the first pass — not a big batch reveal. Do this as many times in a day as you like; it never leaves you with nothing to pray for.</p>
       </section>
 
       <!-- Balancing -->
@@ -385,6 +400,24 @@
         </ul>
 
         <div class="tip"><strong>Note:</strong> balancing shifts <em>when</em> a request next comes due, not its interval. A "Weekly" request stays weekly — it just may move to a different day of the week. It also drifts over time as you pray things at odd hours, so re-running it occasionally is normal.</div>
+      </section>
+
+      <!-- Thanksgiving Reminders -->
+      <section class="help-section" id="thanksgiving">
+        <h2><span class="tab-icon amber-bg">🎉</span> Thanksgiving Reminders</h2>
+
+        <p>An important answered prayer shouldn't just get filed away — it's something to keep actively thanking God for. Thanksgiving Reminders turn an answer (or real progress on something still open) into a standing reminder that keeps coming back around in prayer time.</p>
+
+        <h3>Set it up once</h3>
+        <p>Go to <strong>Admin → Thanksgiving Reminders → Destination</strong> and pick a person or event — often one made just for this, like <em>"Answered Prayers,"</em> or an existing one like <em>"General Thanksgiving."</em> It can be any subject in any category.</p>
+
+        <h3>Then, whenever you mark something Answered or log an Update</h3>
+        <p>You'll see a toggle: <strong>"Add a Thanksgiving reminder."</strong> Leave it on (it's on by default once a destination is set) and PrayIt adds a short reminder under your destination — something like <em>"Kash: Pray for a wife for him — married in June!"</em> — so it's self-explanatory later, without you needing to remember the full backstory.</p>
+
+        <h3>It keeps the same rhythm you were praying it with</h3>
+        <p>If the original request had a schedule — say, every 3 days — the reminder is created on that <strong>same schedule</strong>, not dropped into unscheduled rotation. The idea: if you prayed for it every 3rd day, you'd better be thankful every 3rd day too. A request with no schedule still produces an unscheduled reminder, which simply joins rotation like anything else.</p>
+
+        <div class="tip"><strong>Changed your mind about the destination?</strong> Go back to Admin → Thanksgiving Reminders any time and pick a different person or event (or "None" to turn the feature off). It only affects reminders created from then on — anything already created stays where it is.</div>
       </section>
 
       <!-- Devotionals -->
@@ -435,6 +468,21 @@
         <div class="tip"><strong>Tip:</strong> if you just used <em>Delete All Data</em> and iCloud sync is on, wait 30–60 seconds before importing. iCloud may still be processing the deletions, and importing too soon can cause a conflict.</div>
       </section>
 
+      <!-- Archiving -->
+      <section class="help-section" id="archiving">
+        <h2><span class="tab-icon">🗄️</span> Archiving</h2>
+
+        <p>An Answered list only grows — archiving gets an old answer out of your daily view without deleting the record.</p>
+
+        <h3>Archiving an answer</h3>
+        <p>On any answered request — in <strong>People</strong> or in <strong>All Prayers</strong> — swipe <strong>right</strong> to archive it. It disappears from Answered and All right away and moves to All Prayers' <strong>Archived</strong> filter.</p>
+
+        <h3>Restoring or deleting it for good</h3>
+        <p>Open All Prayers → <strong>Archived</strong>. Swipe an archived request <strong>right</strong> to <strong>Restore</strong> it back to your normal Answered list, or <strong>left</strong> to <strong>Delete</strong> it permanently.</p>
+
+        <div class="tip"><strong>Delete is always permanent.</strong> If you're not sure yet, archive it — you can always restore an archived request later, but a deleted one is gone for good.</div>
+      </section>
+
       <!-- FAQ -->
       <section class="help-section" id="faq">
         <h2><span class="tab-icon">❓</span> Frequently Asked Questions</h2>
@@ -464,6 +512,20 @@
           <summary>Should I give a request a schedule or leave it unscheduled?</summary>
           <div class="faq-body">
             <p>Use a <strong>schedule</strong> for things you want to pray on a set rhythm — a spouse daily, a missionary weekly. Leave it <strong>unscheduled</strong> for the long tail of people and requests you want to get to regularly but not on a fixed day; those rotate a page at a time so you cover everyone over the course of a week or two.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where do Thanksgiving Reminders go, and can I change that?</summary>
+          <div class="faq-body">
+            <p>Wherever you set it — one person or event, chosen once in <strong>Admin → Thanksgiving Reminders → Destination</strong>. Every reminder goes there, regardless of which category or person the original prayer came from. You can change the destination any time; it only affects reminders created afterward, not ones already there.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What's the difference between archiving and deleting?</summary>
+          <div class="faq-body">
+            <p><strong>Archive</strong> just gets an answered prayer out of your everyday Answered/All view — the record is still there under All Prayers' <strong>Archived</strong> filter, and you can restore it any time. <strong>Delete</strong> removes it for good, with no way to get it back short of an earlier backup.</p>
           </div>
         </details>
 
