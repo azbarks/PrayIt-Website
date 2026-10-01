@@ -238,6 +238,8 @@
     <!-- Sidebar -->
     <aside class="help-sidebar">
       <nav aria-label="Help sections">
+        <div class="section-group">Start Here</div>
+        <a href="#getting-started">🚀 Getting Started</a>
         <div class="section-group">Tabs</div>
         <a href="#pray">🙏 Pray</a>
         <a href="#people">👥 People</a>
@@ -247,6 +249,7 @@
         <a href="#rotation">🔁 Rotation</a>
         <a href="#balancing">📅 Schedule balancing</a>
         <a href="#thanksgiving">🎉 Thanksgiving Reminders</a>
+        <a href="#acts">🙌 ACTS Prayer Method</a>
         <a href="#devotionals">📖 Devotionals</a>
         <div class="section-group">Your data</div>
         <a href="#backup">💾 Backup &amp; Restore</a>
@@ -257,6 +260,40 @@
 
     <!-- Main content -->
     <div class="help-content">
+
+      <!-- Getting Started -->
+      <section class="help-section" id="getting-started">
+        <h2><span class="tab-icon">🚀</span> Getting Started</h2>
+
+        <p>PrayIt isn't a to-do list — it's built to walk you through the same prayer list, a little at a time, every day. Nothing gets marked "done" and disappears forever; requests come back around on their own schedule or in rotation, the same way the people and things on your heart actually do.</p>
+
+        <h3>Why categories, not just one big list</h3>
+        <p>Think of a category less as a topic (like "Family" or "Work") and more as a <em>movement</em> — a stretch of your prayer time with its own posture. The built-in sample list uses the classic <strong>ACTS</strong> pattern:</p>
+        <ul>
+          <li><strong>Adoration</strong> — starting with who God is, before asking for anything.</li>
+          <li><strong>Confession</strong> — being honest with God about where you've fallen short.</li>
+          <li><strong>Thanksgiving</strong> — what he's already done, including a running list of answered prayers (see <a href="#thanksgiving">Thanksgiving Reminders</a>).</li>
+          <li><strong>Supplication</strong> — everyone and everything else on your heart.</li>
+        </ul>
+        <p>That's a starting point, not a rule — categories are yours to name, reorder, and use however fits how you pray. Some people do use them as topics instead (Family, Work, Missionaries), and that works fine too. If you've already built out your own categories and want to switch to ACTS later, <strong>Admin → Prayer Method → Set Up ACTS</strong> sets all four up in one tap — see <a href="#acts">ACTS Prayer Method</a> below.</p>
+
+        <h3>Your first few minutes in the app</h3>
+        <ol style="margin:8px 0 8px 22px; display:flex; flex-direction:column; gap:10px;">
+          <li><strong>Look around the sample list first.</strong> PrayIt seeds a small demo roster on first launch so you can see a working list — a few people, a few events, some scheduled and some not — before building your own.</li>
+          <li><strong>Clear it when you're ready to start fresh:</strong> <em>Admin → Delete All Data.</em> It's just sample content, so there's nothing worth backing up first.</li>
+          <li><strong>Set up your categories:</strong> keep the bundled ACTS set, or go to <em>Admin → Categories → Edit</em> to rename, reorder, and pick which one is the default for new people.</li>
+          <li><strong>Add a handful of people or events:</strong> the <strong>People</strong> tab's <strong>+</strong> button. Give each one a first request right away, or leave it blank and add one later.</li>
+          <li><strong>Decide schedule or no schedule</strong> for each request — see the tip below.</li>
+          <li><strong>Optional:</strong> turn on a daily devotional in <em>Admin → Daily Devotional</em> to open each prayer time with a short reading.</li>
+          <li><strong>Go to the Pray tab</strong> and walk through it. Wherever you stop is where you'll pick back up next time.</li>
+        </ol>
+
+        <div class="tip"><strong>Schedule or rotation?</strong> Give something a <strong>schedule</strong> (Daily, Weekly, every few days) when you want it on a fixed rhythm — a spouse daily, a missionary weekly. Leave it <strong>unscheduled</strong> for everyone else you want to get to regularly but not on a set day; those rotate through a page at a time (see <a href="#rotation">Rotation</a>) so you cover your whole list over the course of a week or two, without it ever feeling like a chore list you have to finish.</div>
+
+        <div class="tip"><strong>Start smaller than you think.</strong> Add the handful of people most on your heart right now, pray through them for a few days, then keep adding as you go. A list built all at once, all as "Daily," gets overwhelming fast — the rotation is there so you don't have to front-load everything.</div>
+
+        <p>From here, the rest of this page is a reference for each tab and feature — worth skimming once, then coming back to whenever something's unclear.</p>
+      </section>
 
       <!-- Pray -->
       <section class="help-section" id="pray">
@@ -279,14 +316,18 @@
         <div class="actions-row">
           <span class="action-pill pill-orange">✎ Update</span>
           <span class="action-pill pill-blue">✓ Answered</span>
+          <span class="action-pill" style="border-color:#D64545;color:#D64545;background:#FCEAEA;">🗑 Delete</span>
         </div>
-        <p>Swipe <strong>right</strong> on a request to add an <strong>Update</strong> — a dated note on how it's going, without closing the request. Swipe <strong>left</strong> to mark it <strong>Answered</strong> with a note; it moves to the Answered list and stops appearing in the flow.</p>
+        <p>Swipe <strong>right</strong> on a request to add an <strong>Update</strong> — a dated note on how it's going, without closing the request. Swipe <strong>left</strong> reveals <strong>Answered</strong> and <strong>Delete</strong> — a full left swipe triggers Answered (unchanged, so existing habits don't change anyone's data by accident); Delete only ever fires from an explicit tap on its own button, and it's permanent.</p>
 
         <h3>Show More</h3>
         <p>If a category has more unscheduled requests than fit on today's page, a <strong>Show More</strong> button reveals another batch of the same size. It's a peek ahead — marking something Prayed resets it.</p>
 
         <h3>Adding and editing right from here</h3>
-        <p>Tap the <strong>+</strong> next to anyone's name to add a new request for them without leaving the flow. Tap a request's text (not the green circle) to open it for editing — most often to change its schedule on the spot, e.g. Daily → Weekly, or turn scheduling off entirely so it joins rotation instead.</p>
+        <p>Tap the <strong>+</strong> next to anyone's name to add a new request for them without leaving the flow. Tap a request's text (not the green circle) to open it for editing — change its schedule on the spot (e.g. Daily → Weekly, or turn scheduling off entirely so it joins rotation instead), move it to a different person or event — and thus a different category — from the <strong>Person / Event</strong> picker, or just see its stats (below).</p>
+
+        <h3>Prayer stats</h3>
+        <p>Once you've prayed a request at least once, its edit screen shows a <strong>Prayer Stats</strong> section: how many distinct days you've prayed it, and the average number of days between those prayers. It's most useful for unscheduled requests, since that's the only place you can see how often you're actually getting to something — a scheduled request's average should just converge on its own interval.</p>
 
         <h3>Start Over</h3>
         <p>After the last category you'll see an <em>All Done</em> screen with a <strong>Start Over</strong> button. It just lets you walk the categories again from the top — it does not un-pray anything or rewind your place in the rotation.</p>
@@ -343,6 +384,9 @@
 
         <h3>Categories</h3>
         <p>Tap <strong>Edit</strong>, then drag to reorder — this is the order you pray through them. Tap a category to rename it, set how many requests it <strong>reveals at a time</strong> in the Pray flow, or make it the <strong>default</strong> for new people (only one category can be the default).</p>
+
+        <h3>Prayer Method</h3>
+        <p><strong>Set Up ACTS</strong> replaces your categories with Adoration, Confession, Thanksgiving, and Supplication in one tap. See <a href="#acts">ACTS Prayer Method</a> below.</p>
 
         <h3>People List</h3>
         <p>The <em>Group by category</em> toggle switches the People tab between sections and the flat A–Z list.</p>
@@ -418,6 +462,24 @@
         <p>If the original request had a schedule — say, every 3 days — the reminder is created on that <strong>same schedule</strong>, not dropped into unscheduled rotation. The idea: if you prayed for it every 3rd day, you'd better be thankful every 3rd day too. A request with no schedule still produces an unscheduled reminder, which simply joins rotation like anything else.</p>
 
         <div class="tip"><strong>Changed your mind about the destination?</strong> Go back to Admin → Thanksgiving Reminders any time and pick a different person or event (or "None" to turn the feature off). It only affects reminders created from then on — anything already created stays where it is.</div>
+      </section>
+
+      <!-- ACTS Prayer Method -->
+      <section class="help-section" id="acts">
+        <h2><span class="tab-icon amber-bg">🙌</span> ACTS Prayer Method</h2>
+
+        <p>ACTS is a classic, popular way to structure a prayer time: <strong>A</strong>doration, <strong>C</strong>onfession, <strong>T</strong>hanksgiving, <strong>S</strong>upplication. It's the pattern the bundled sample roster uses, and you can set it up for your own list any time.</p>
+
+        <h3>Setting it up</h3>
+        <p>Go to <strong>Admin → Prayer Method → Set Up ACTS</strong>. If you already have categories with people and requests in them, PrayIt warns you first — setting up ACTS replaces your current categories, so export a backup beforehand if there's anything you'd want back. Starting from nothing (a fresh install, or right after Delete All Data), it sets up directly with no warning, since there's nothing to lose.</p>
+
+        <ul>
+          <li><strong>Supplication</strong> — asking on behalf of others and yourself — becomes the default category for new people, the same role a catch-all category like "General" plays otherwise.</li>
+          <li>An <strong>"Answered Prayers"</strong> event is created under Thanksgiving, and set as your Thanksgiving Reminders destination automatically — that feature works right away instead of needing a separate setup step.</li>
+          <li>You're offered a handful of short <strong>starter prompts</strong> for Adoration (praising God's character) so it isn't empty to start. They're ordinary requests — pray through them, edit them, or delete them like anything else.</li>
+        </ul>
+
+        <div class="tip"><strong>Not locked in.</strong> ACTS is just four categories like any other — rename them, reorder them, add more, or delete the ones you don't want, exactly as you would with categories you built yourself.</div>
       </section>
 
       <!-- Devotionals -->
@@ -512,6 +574,27 @@
           <summary>Should I give a request a schedule or leave it unscheduled?</summary>
           <div class="faq-body">
             <p>Use a <strong>schedule</strong> for things you want to pray on a set rhythm — a spouse daily, a missionary weekly. Leave it <strong>unscheduled</strong> for the long tail of people and requests you want to get to regularly but not on a fixed day; those rotate a page at a time so you cover everyone over the course of a week or two.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is ACTS, and can I set it up later if I didn't start with it?</summary>
+          <div class="faq-body">
+            <p>Adoration, Confession, Thanksgiving, Supplication — a classic structure for a prayer time. <strong>Admin → Prayer Method → Set Up ACTS</strong> sets up all four any time, not just on a fresh install. If you already have categories with content in them, it warns you first, since it replaces what's there. See <a href="#acts">ACTS Prayer Method</a>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I move a single prayer request to a different category?</summary>
+          <div class="faq-body">
+            <p>Yes — open the request for editing (tap it in the Pray flow, or from the person's detail screen) and use the <strong>Person / Event</strong> picker. It moves just that one request to whichever person or event you pick, which puts it in that person's category — the rest of that person's requests, and the person themselves, stay exactly where they were. If the destination person or event doesn't exist yet in that category, add them there first, then move the request to them.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How can I tell how often I'm actually praying for something?</summary>
+          <div class="faq-body">
+            <p>Open the request for editing — once you've prayed it at least once, a <strong>Prayer Stats</strong> section shows how many distinct days you've prayed it and the average number of days between those prayers. It's most telling for unscheduled requests, since a scheduled one's average will just match its own interval.</p>
           </div>
         </details>
 
