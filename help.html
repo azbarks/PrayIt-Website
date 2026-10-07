@@ -254,6 +254,7 @@
         <div class="section-group">Your data</div>
         <a href="#backup">💾 Backup &amp; Restore</a>
         <a href="#archiving">🗄️ Archiving</a>
+        <a href="#applock">🔒 PIN &amp; Face ID</a>
         <a href="#faq">❓ FAQ</a>
       </nav>
     </aside>
@@ -404,6 +405,9 @@
         <h3>Thanksgiving Reminders</h3>
         <p>Pick the person or event where you want answered-prayer reminders to go. See <a href="#thanksgiving">Thanksgiving Reminders</a> below.</p>
 
+        <h3>Security</h3>
+        <p>Optionally lock PrayIt with a 4-digit PIN, with Face ID as a shortcut. See <a href="#applock">PIN &amp; Face ID</a>.</p>
+
         <h3>Backup &amp; Restore</h3>
         <p>Export a JSON backup, or import one. Import always merges — see <a href="#backup">Backup &amp; Restore</a>.</p>
 
@@ -549,6 +553,26 @@
         <div class="tip"><strong>Delete is always permanent.</strong> If you're not sure yet, archive it — you can always restore an archived request later, but a deleted one is gone for good.</div>
       </section>
 
+      <!-- App lock -->
+      <section class="help-section" id="applock">
+        <h2><span class="tab-icon">🔒</span> PIN &amp; Face ID</h2>
+
+        <p>Your prayer list can be personal. If you'd like to keep it private on your phone, PrayIt can ask for a 4-digit PIN every time you open it. It's completely optional and off until you turn it on.</p>
+
+        <h3>Turning it on</h3>
+        <p><strong>Admin → Security → Set a PIN.</strong> Choose four digits and enter them again to confirm. If your device has Face ID (or Touch ID), PrayIt uses it to unlock automatically, and you can fall back to your PIN any time. There's an <strong>Unlock with Face ID</strong> switch in the same place if you'd rather type the PIN.</p>
+
+        <h3>When it locks</h3>
+        <p>PrayIt locks when you first open it and whenever you leave it and come back. It also covers the screen in the app switcher, so nothing on your list shows there. After five wrong PINs in a row, the keypad pauses for 30 seconds.</p>
+
+        <h3>Changing or removing it</h3>
+        <p><strong>Admin → Security → Change PIN</strong> or <strong>Remove PIN</strong>. Both ask for your current PIN first.</p>
+
+        <div class="tip"><strong>What this is, and isn't:</strong> it keeps someone who picks up your unlocked phone out of your prayer list. It isn't encryption. The PIN is stored only on that device — it doesn't sync through iCloud, so each device has its own (or none), and it isn't included in backups.</div>
+
+        <div class="tip"><strong>If you forget your PIN:</strong> delete PrayIt and reinstall it from the App Store. That clears the PIN, and your list comes back from iCloud if sync is on. To be safe, export a backup first (Admin → Export Backup) and keep it somewhere you can reach.</div>
+      </section>
+
       <!-- FAQ -->
       <section class="help-section" id="faq">
         <h2><span class="tab-icon">❓</span> Frequently Asked Questions</h2>
@@ -634,6 +658,13 @@
           <summary>Does "Start Over" undo my prayers for the day?</summary>
           <div class="faq-body">
             <p>No. It only sends you back to the first category so you can walk through again. Anything you marked Prayed stays that way, and your place in the rotation keeps moving forward.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I put a PIN or Face ID on PrayIt?</summary>
+          <div class="faq-body">
+            <p>Yes — <strong>Admin → Security → Set a PIN</strong>. It's optional, and Face ID can unlock it for you. See <a href="#applock">PIN &amp; Face ID</a>. The PIN is per device and doesn't sync, so set it separately on each device you want locked.</p>
           </div>
         </details>
 
